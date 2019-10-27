@@ -12,13 +12,13 @@
 <div class="canvas">
 <%if(Top.level()){ %>     <%-- Top.htmlからLevel●の値を受け取りたい--%>
 	<%case 1:%>
-		<%system.out.println(1);--%><img src="">
+		<%system.out.println(1);%><img src="haikyo.png">
 		<%break;%>
 	<%case 2:%>
-		<%system.out.println(2);%><img src="">
+		<%system.out.println(2);%><img src="rojiura.png">
 		<%break;%>
 	<%case 3:%>
-		<%system.out.println(3);%><img src="">
+		<%system.out.println(3);%><img src="juutakugai">
 		<%break;%>
 <%}%>
 <div class="button">
