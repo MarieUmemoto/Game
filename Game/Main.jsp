@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,10 +7,20 @@
 <title>DUSTBOX GAME</title>
 </head>
 <link href = "gage.css" rel = "stylesheet" type = "text/css" >
-
+<% page import="Top.html" %>
 <body>
 <div class="canvas">
-
+<%if(Top.level()){ %>     <%-- Top.htmlからLevel●の値を受け取りたい--%>
+	<%case 1:%>
+		<%system.out.println(1);--%><img src="">
+		<%break;%>
+	<%case 2:%>
+		<%system.out.println(2);%><img src="">
+		<%break;%>
+	<%case 3:%>
+		<%system.out.println(3);%><img src="">
+		<%break;%>
+<%}%>
 <div class="button">
 <div id="timer1">
 <input type="submit" value="HIGTH" class="START1" onclick="start1()">
@@ -26,7 +38,7 @@
 </div>
 </div>
 
-
+<a href="Top.html">BACK</a>
 
 
 

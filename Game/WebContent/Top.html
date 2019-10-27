@@ -3,19 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <title>DUSTBOX GAME</title>
+<style>
+	input[type="submit"]{
+		width:150px;
+		height:40px;
+		background-color:#36a9e3;
+		font-size:25px;
+	}
+	.Level{
+	display:flex;
+	justify-content:center;
+	}
+</style>
 </head>
 <body>
 <div class="top" align="center">
-<img src="TOP.png" alt="写真" width="1000px" height="500px"><br>
-<font size="7" face="ＭＳ ゴシック">
-Level<br>
-<select name="Level">
-<option value="1">Level 1</option>
-<option value="2">Level 2</option>
-<option value="3">Level 3</option>
-</select><br>
-<a href="Main.html">START</a>
-</font>
-</div>
+<img src="TOP.png" alt="写真" width="600px" height="300px"><br>
+<font size="6" face="ＭＳ ゴシック">
+<div class="Level" >
+<form action="Main.jsp" method="post">               <!--Main.jspにLevel●の値を渡したい-->
+<input type="submit" name="level" value="Level_1" onclick="1">
+</form>
+
+<form action="Main.jsp" method="post">
+<input type="submit" name="level" value="Level_2" onclick="2">
+</form>
+
+<form action="Main.jsp" method="post">
+<input type="submit" name="level" value="Level_3" onclick="3">
+</form></div>
+Levelを選択してスタート！<br>
+</div></font>
 </body>
 </html>
