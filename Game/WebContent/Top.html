@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>DUSTBOX GAME</title>
 <style>
-	input[type="submit"]{
+	input[type="submit"]{  <!--CSSでTOP画像・ボタンの設定-->
 		width:150px;
 		height:40px;
 		background-color:#36a9e3;
@@ -21,16 +21,16 @@
 <img src="TOP.png" alt="写真" width="600px" height="300px"><br>
 <font size="6" face="ＭＳ ゴシック">
 <div class="Level" >
-<form action="Main.jsp" method="post">               <!--Main.jspにLevel●の値を渡したい-->
-<input type="submit" name="level" value="Level_1" onclick="1">
+<form action="/Main.jsp" method="post">               <!--Main.jspにLevel●の値を渡したい-->
+<a href="Game/Game/Main.jsp"><input type="submit" name="level" value="Level_1" onclick="1"></a>
 </form>
 
 <form action="Main.jsp" method="post">
-<input type="submit" name="level" value="Level_2" onclick="2">
+<a href="/Main.jsp"><input type="submit" name="level" value="Level_2" onclick="2"></a>
 </form>
 
 <form action="Main.jsp" method="post">
-<input type="submit" name="level" value="Level_3" onclick="3">
+<a href="/Main.jsp"><input type="submit" name="level" value="Level_3" onclick="3"></a>
 </form></div>
 Levelを選択してスタート！<br>
 </div></font>
